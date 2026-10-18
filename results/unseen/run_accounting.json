@@ -1,0 +1,18 @@
+{
+  "completed": true,
+  "M_stop": 40,
+  "last_dataset_id": 2039,
+  "stopping_reason": "two_consecutive_stability_checks",
+  "previous_Delta": 0.04505515704763263,
+  "current_Delta": 0.029786041500306042,
+  "unused_reserved_datasets": 160,
+  "completed_runs": 400,
+  "completed_updates": 400000,
+  "fd_endpoint_evaluations": 800000,
+  "sampled_BR_paths": 3276800000,
+  "primary_BR_Euler_steps": 3276800000000,
+  "deterministic_checkpoints": 2000,
+  "br_calls": 802000,
+  "projections": 0,
+  "failures": []
+}

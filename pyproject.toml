@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mi-mfg-irl-lq"
+version = "1.0.0"
+description = "LQ inverse learning with closed-form BR oracle and sampled cost evaluation"
+requires-python = ">=3.12"
+dependencies = ["numpy==2.5.4", "scipy==1.18.1"]
+
+[project.optional-dependencies]
+dev = ["pytest==9.1.1"]
+plots = ["matplotlib==3.10.8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

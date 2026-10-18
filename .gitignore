@@ -1,0 +1,39 @@
+# Environments and Python build/cache output
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.coverage
+htmlcov/
+# Runtime snapshots and large simulation histories (compact data/results are retained)
+results/**/runs/
+results/**/smoke/
+results/**/training_history.csv*
+results/**/run_summary.csv
+results/**/generation_accounting.json
+results/**/expert_generation_diagnostics.json
+results/**/batch_accounting.json
+**/sample_paths*
+**/trajectories*
+# Local diagnostics, archives and private material
+*.log
+*.zip
+reports/
+comparison/
+workspace/
+notes/
+private/
+research_results.md
+figure_captions.md
+# Personal configuration
+.DS_Store
+.env
+.env.*
+.codex/
+.idea/
+.vscode/

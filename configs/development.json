@@ -1,0 +1,170 @@
+{
+  "dataset_ids": [
+    1000,
+    1001,
+    1002,
+    1003,
+    1004,
+    1005,
+    1006,
+    1007,
+    1008,
+    1009,
+    1010,
+    1011,
+    1012,
+    1013,
+    1014,
+    1015,
+    1016,
+    1017,
+    1018,
+    1019
+  ],
+  "updates": 1000,
+  "paths": 4096,
+  "initial_lambda": 0.5,
+  "h": 0.0001,
+  "checkpoints": [
+    0,
+    250,
+    500,
+    750,
+    1000
+  ],
+  "families": [
+    {
+      "version": "V1",
+      "beta": 0,
+      "etas": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "version": "V1",
+      "beta": 0.001,
+      "etas": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "version": "V1",
+      "beta": 0.01,
+      "etas": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "version": "V1",
+      "beta": 0.03,
+      "etas": [
+        2,
+        5,
+        10
+      ]
+    },
+    {
+      "version": "V1",
+      "beta": 0.1,
+      "etas": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "version": "V1",
+      "beta": 0.3,
+      "etas": [
+        0.5,
+        1,
+        2
+      ]
+    },
+    {
+      "version": "V1",
+      "beta": 1,
+      "etas": [
+        0.2,
+        0.5,
+        1
+      ]
+    },
+    {
+      "version": "V1",
+      "beta": 10,
+      "etas": [
+        0.02,
+        0.05,
+        0.1
+      ]
+    },
+    {
+      "version": "V1",
+      "beta": 100,
+      "etas": [
+        0.002,
+        0.005,
+        0.01
+      ]
+    },
+    {
+      "version": "V2",
+      "beta": null,
+      "etas": [
+        5,
+        10,
+        20
+      ]
+    }
+  ],
+  "optimizer_seed": 0,
+  "data_directory": "data/development",
+  "model": {
+    "T": 1.0,
+    "b_alpha": 1.0,
+    "b_x": 0.5,
+    "c_alpha": 1.0,
+    "c_x": 1.0,
+    "c_mu": 1.0,
+    "sigma": 0.1,
+    "initial_mean": 0.5,
+    "initial_variance": 0.01,
+    "initial_second_moment": 0.26,
+    "num_time_steps": 1000,
+    "ivp_method": "DOP853",
+    "ivp_rtol": 1e-10,
+    "ivp_atol": 1e-12,
+    "bvp_tol": 1e-09,
+    "bvp_max_nodes": 50000
+  },
+  "data_generation": {
+    "lambda_star": 0.9,
+    "random_seed_base": 20260818,
+    "setting_index": 1,
+    "num_agents": 200,
+    "num_rounds": 100
+  },
+  "selection": {
+    "target_lambda": 0.9,
+    "success_threshold": 0.01,
+    "MAE_tolerance": 0.0001,
+    "RMSE_tolerance": 0.0001,
+    "MaxAE_tolerance": 0.0001,
+    "ordered_steps": [
+      "maximize_success_count",
+      "MAE_practical_equivalence",
+      "RMSE_practical_equivalence",
+      "MaxAE_practical_equivalence",
+      "minimize_projection_count",
+      "minimize_median_tail_SD",
+      "smaller_eta"
+    ]
+  }
+}
