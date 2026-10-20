@@ -1,6 +1,6 @@
 # mi-mfg-irl-lq
 
-Version **1.0.0**: **LQ inverse learning with closed-form BR oracle**. The BR policy comes from the accepted closed-form oracle, BR costs use sampled Monte Carlo trajectories, and inverse optimization uses sampled finite-difference gradients. The planned release tag is `v1.0.0`; no release has been published.
+Version **1.0.0**: **LQ inverse learning with closed-form BR oracle**. The BR policy comes from the accepted closed-form oracle, BR costs use sampled Monte Carlo trajectories, and inverse optimization uses sampled finite-difference gradients. The GitHub release [`v1.0.0`](https://github.com/research-artifacts-432/mi-mfg-irl-lq/releases/tag/v1.0.0) has been published.
 
 Scalar-LQ mean-field-game inverse learning with a closed-form LQ best-response (BR) solver and **sampled Euler–Maruyama BR cost evaluation**. The analytic BR is obtained through the retained numerical ODE/boundary-value solver; training costs are sampled, not moment substituted. This version includes expert generation, formal development selection, frozen unseen evaluation, compact official evidence and figure reconstruction.
 
